@@ -1,0 +1,58 @@
+@import './fonts';
+@import './variables';
+@import './mixins';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    padding-top: 85px;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 9px;
+    background-color: #f1f9ff;
+    &:hover{
+        background-color: #DCEAF5;
+    }
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 9px;
+    background-color: $footer-bg-color;
+    &:hover{
+        background-color: #114066;
+    }
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a{text-decoration: none;}
+button{
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+input{
+    outline: none;
+}
+
+@import './components/header';
+@import './components/footer';
+
+@import './pages/home';
+@import './pages/about';
+@import './pages/service';
+@import './pages/career';
+@import './pages/blog';
+@import './pages/blog-inner';
+@import './pages/career-2';
+@import './pages/contact';
+@import './pages/privery';
+
+@import './components/buttons';
+@import './components/media';
+@import './components/dark-light';
